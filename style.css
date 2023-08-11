@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  background: rgb(9, 47, 121);
+  background: linear-gradient(90deg, rgba(9, 47, 121, 1) 35%, rgba(0, 120, 255, 1) 100%);
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 450px;
+  width: 100%;
+  background: white;
+  padding: 30px 30px;
+  border-radius: 50px;
+}
+h4 {
+  font-size: 25px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+}
+.age {
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+}
+
+@keyframes gariss {
+  0% {
+    color: red;
+  }
+  33% {
+    color: green;
+  }
+  66% {
+    color: blue;
+  }
+  100% {
+    color: red;
+  }
+}
+
+.container form .block {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+form input {
+  margin-top: 10px;
+  display: inline-block;
+}
+input[type="text"],
+select,
+textarea {
+  padding: 10px;
+  outline: none;
+  border: 1px solid rgb(91, 91, 91);
+  border-radius: 7px;
+  resize: vertical;
+  font-size: 16px;
+  border-bottom-width: 2px;
+}
+.block input:focus,
+.block input:focus {
+  background-color: rgb(204, 204, 254);
+  border-color: rgb(0, 0, 0);
+}
+form button {
+  height: 45px;
+  margin: 45px 0;
+  width: 200px;
+  outline: none;
+  color: white;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 7px;
+  letter-spacing: 3px;
+  background: linear-gradient(90deg, rgba(9, 47, 121, 1) 35%, rgba(0, 120, 255, 1) 100%);
+}
+form button:hover {
+  background: linear-gradient(-90deg, rgba(9, 47, 121, 1) 35%, rgba(0, 120, 255, 1) 100%);
+  transform: scale(1.2);
+}
+footer {
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px 50px;
+  margin-top: 30px;
+  padding: 10px;
+  color: rgb(9, 14, 121);
+}
+@media screen and (max-width: 584px) {
+  .container {
+    max-width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  input[type="text"],
+  select,
+  textarea {
+    width: 100%;
+  }
+  .block {
+    height: 90px;
+  }
+  form input {
+    width: 100%;
+  }
+  .age {
+    width: 100%;
+  }
+  footer {
+    width: 100%;
+    margin: auto;
+  }
+}
